@@ -1,14 +1,17 @@
 nav {
     display: flex;
     justify-content: space-between;
-    align-content: center;
-    background: linear-gradient(to Left, rgb(194, 194, 194), black);
+    align-items: center;
+    background: linear-gradient(to Left, rgb(118, 118, 118), black);
+    border-radius: 10px;
 }
 
 nav div p{
+    /* border: solid; */
+    margin-left: 50%;
     color: white;
     font-size: 24px;
-    padding: 10px;
+    
 }
 
 a{
@@ -17,6 +20,46 @@ a{
 }
 
 ul{
+    
     list-style-type: none;
+    display: flex;
+    align-content: center;
+}
+
+li{
+    margin-right: 10px;
+    display: flex;
+    align-content: center;
+}
+
+li p{
+    font-weight: bold;
+    color: white;
+    transition: transform 1s;
+}
+
+li p:hover{
+    color: aqua;
+    transform: scale(1.2);
+}
+
+@media (max-width: 600px){
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    ul{
+        display: block;
+    }
+    nav div p{
+        margin-left: 0%;
+    }
+    li{
+        margin-right: 30px;
+        display: flex;
+        align-content: center;
+    }
+
+    
 }
 
